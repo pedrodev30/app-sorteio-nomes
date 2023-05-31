@@ -49,3 +49,7 @@ section h2 {
 section p {
   margin: 10px 0;
 }
+
+.text-left {
+  text-align: left;
+}
