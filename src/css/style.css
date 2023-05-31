@@ -30,3 +30,14 @@ header h1 {
   align-items: center;
   height: 500px;
 }
+
+section {
+  background-color: #ffffff;
+  box-shadow: 5px 5px 5px #808080;
+  padding: 30px;
+  width: 600px;
+  color: #808080;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
