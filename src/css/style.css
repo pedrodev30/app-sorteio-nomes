@@ -19,3 +19,7 @@ header {
 header img {
   width: 150px;
 }
+
+header h1 {
+  color: #ffffff;
+}
