@@ -23,3 +23,10 @@ header img {
 header h1 {
   color: #ffffff;
 }
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
