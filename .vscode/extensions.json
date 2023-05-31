@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "naumovs.color-highlight",
+    "dracula-theme.theme-dracula",
+    "miguelsolorio.fluent-icons",
+    "ritwickdey.liveserver",
+    "pkief.material-icon-theme",
+    "ms-ceintl.vscode-language-pack-pt-br",
+    "esbenp.prettier-vscode"
+  ]
+}
