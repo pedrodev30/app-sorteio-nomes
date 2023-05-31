@@ -67,3 +67,15 @@ section textarea {
   max-height: 150px;
   min-height: 150px;
 }
+
+section button {
+  background-color: #1480fa;
+  color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px
+}
