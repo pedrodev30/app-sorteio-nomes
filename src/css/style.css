@@ -79,3 +79,10 @@ section button {
   margin-top: 10px;
   border-radius: 5px
 }
+
+footer {
+  height: 400px;
+  background-image: url(../img/fundo-rodape.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
