@@ -15,3 +15,7 @@ header {
   align-items: center;
   padding: 30px;
 }
+
+header img {
+  width: 150px;
+}
