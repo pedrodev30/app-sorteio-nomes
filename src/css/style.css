@@ -174,3 +174,36 @@ div.fade {
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
+
+/* Modal */
+div.modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  background-color: var(--color-white);
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  padding: 2.2rem;
+  border-radius: 6px;
+}
+
+div.modal #texto-alerta {
+  margin-bottom: 1.6rem;
+}
+
+div.modal #botao-cancelar {
+  float: right;
+  color: var(--bg-color-button-fechar);
+  font-size: 1.4rem;
+  border: 1px solid var(--bg-color-button-fechar);
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  opacity: 0.8;
+  transition: all 0.3s;
+  padding: 0.4rem 1.2rem;
+}
+
+div.modal #botao-cancelar:hover {
+  opacity: 1;
+}
