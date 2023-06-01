@@ -60,3 +60,7 @@ Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figm
     </td>
   </tr>
 </table>
+
+## 🎯 Status do projeto
+
+O projeto está finalizado.
