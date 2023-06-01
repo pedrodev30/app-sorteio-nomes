@@ -81,6 +81,9 @@ section textarea {
   min-width: 100%;
   max-height: 15rem;
   min-height: 15rem;
+  border: 1px solid var(--bg-color-header);
+  outline: none;
+  resize: none;
 }
 
 section #botao-sortear {
