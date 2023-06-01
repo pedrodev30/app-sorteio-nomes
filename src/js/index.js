@@ -1,0 +1,19 @@
+const btnSortear = document.querySelector(".botaoSortear")
+const textarea = document.querySelector("textarea")
+const tagResultado = document.querySelector(".resultado p")
+const popUpResultado = document.querySelector(".resultado")
+const btnFechar = document.querySelector(".fechar")
+
+function pegarDadosDoFormulario() {
+  const valorCampo = textarea.value
+  const listaNomes = valorCampo.split(",")
+  const tamanhoArray = listaNomes.length
+  // const posicaoNome = gerarNumeroAleatorio(tamanhoArray)
+  // const nome = listaNomes[posicaoNome]
+  // mostrarResultado(nome)
+
+  textarea.value = ""
+  console.log(listaNomes);
+}
+
+btnSortear.addEventListener("click", pegarDadosDoFormulario)
