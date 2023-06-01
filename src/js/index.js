@@ -3,9 +3,20 @@ const textarea = document.querySelector("textarea")
 const tagResultado = document.querySelector(".resultado p")
 const popUpResultado = document.querySelector(".resultado")
 const botaoFechar = document.querySelector("#botao-fechar")
+const botaoCancelarModal = document.querySelector("#botao-cancelar")
+const fade = document.querySelector(".fade")
+const modal = document.querySelector(".modal")
+const textoAlerta = document.querySelector("#texto-alerta")
 
 function pegarDadosDoFormulario() {
   const valorCampo = textarea.value
+  
+  if(valorCampo == "") {
+    fade.classList.remove("hide")
+    modal.classList.remove("hide")
+    textoAlerta.innerText = "Por favor preencha algum nome para sortear!"
+    return
+  }
   const listaNomes = valorCampo.split(",")
   const tamanhoArray = listaNomes.length
   const posicaoNome = gerarNumeroAleatorio(tamanhoArray)
