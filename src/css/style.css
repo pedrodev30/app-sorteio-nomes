@@ -163,3 +163,14 @@ footer {
     var(--bg-color-resultado)
   );
 }
+
+/* Fade */
+div.fade {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
