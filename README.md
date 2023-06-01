@@ -64,3 +64,7 @@ Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figm
 ## 🎯 Status do projeto
 
 O projeto está finalizado.
+
+## :memo: Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/pedrodev30/app-sorteio-nomes/blob/main/LICENSE) para mais detalhes.
