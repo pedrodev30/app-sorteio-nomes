@@ -17,8 +17,16 @@ function pegarDadosDoFormulario() {
     textoAlerta.innerText = "Por favor preencha algum nome para sortear!"
     return
   }
+
   const listaNomes = valorCampo.split(",")
   const tamanhoArray = listaNomes.length
+
+  if(tamanhoArray < 3) {
+    fade.classList.remove("hide")
+    modal.classList.remove("hide")
+    textoAlerta.innerText = "Por favor digite pelo menos três nomes para sortear!"
+    return
+  }
   const posicaoNome = gerarNumeroAleatorio(tamanhoArray)
   const nome = listaNomes[posicaoNome]
   mostrarResultado(nome)
