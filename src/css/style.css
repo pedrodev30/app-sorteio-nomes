@@ -5,6 +5,7 @@
   --color-gray: #808080;
   --bg-color-button-sortear: #1480fa;
   --bg-color-resultado: rgba(4, 20, 62, 89%);
+  --bg-color-button-fechar: #c71616;
   font-size: 62.5%; /* 10px */
 }
 
@@ -121,17 +122,22 @@ footer {
 .resultado #botao-fechar{
   float: right;
   margin: 2.0rem;
-  color: var(--color-white);
-  font-size: 20px;
-  width: 4.0rem;
-  height: 4.0rem;
-  border: solid var(--color-white) 2px;
-  border-radius: 100%;
+  color: var(--bg-color-body);
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background-color: transparent;
+  background-color: var(--bg-color-button-fechar);
+  opacity: .8;
+  transition: all 0.3s;
+  padding: 0.4rem 1.2rem;
+}
+
+.resultado #botao-fechar:hover {
+  opacity: 1;
 }
 
 .resultado p{
