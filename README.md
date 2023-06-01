@@ -25,3 +25,19 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 - HTML
 - CSS
 - JavaScript
+
+## 🚀 Rodando o projeto
+
+```bash
+# clonar o repositório
+$ git clone https://github.com/pedrodev30/app-sorteio-nomes.git
+
+# vai entrar na pasta do projeto
+$ cd app-sorteio-nomes
+
+# abrir a pasta do projeto no seu editor
+$ Abra a pasta no Visual Studio Code ou editor de sua Preferência
+
+# Live Server é uma extensão do Vs Code que executa o arquivo no seu navegador
+$ Agora abra o arquivo index.html com o live Server
+```
