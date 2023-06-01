@@ -9,15 +9,19 @@ function pegarDadosDoFormulario() {
   const listaNomes = valorCampo.split(",")
   const tamanhoArray = listaNomes.length
   const posicaoNome = gerarNumeroAleatorio(tamanhoArray)
-  // const nome = listaNomes[posicaoNome]
-  // mostrarResultado(nome)
+  const nome = listaNomes[posicaoNome]
+  mostrarResultado(nome)
 
   textarea.value = ""
-  console.log(listaNomes);
 }
 
 btnSortear.addEventListener("click", pegarDadosDoFormulario)
 
 function gerarNumeroAleatorio(tamanhoArray) {
   return Math.floor(Math.random() * (tamanhoArray - 0) + 0)
+}
+
+function mostrarResultado(nome) {
+  tagResultado.innerText = `Resultado: ${nome}`
+  popUpResultado.classList("mostrarResultado")
 }
