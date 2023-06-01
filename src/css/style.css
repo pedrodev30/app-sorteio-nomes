@@ -28,7 +28,7 @@ header h1 {
   color: #ffffff;
 }
 
-.app {
+#app {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,7 +72,7 @@ section textarea {
   min-height: 150px;
 }
 
-section button {
+section #botao-sortear {
   background-color: #1480fa;
   color: #ffffff;
   border: none;
@@ -106,7 +106,7 @@ footer {
   transition: 0.5s;
 }
 
-.resultado span{
+.resultado #botao-fechar{
   float: right;
   margin: 20px;
   color:#fff;
@@ -119,6 +119,7 @@ footer {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  background-color: transparent;
 }
 .resultado p{
   text-align: center;

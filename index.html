@@ -19,7 +19,7 @@
       <h1>App de sorteio Kenzie</h1>
     </header>
 
-    <main class="app">
+    <main id="app">
       <section>
         <h2>SORTEAR NOMES</h2>
         <p>Crie o sorteio de <strong>nomes</strong> facilmente utilizando essa aplicação</p>
@@ -28,15 +28,15 @@
 
         <p class="text-left">Adicione nomes</p>
 
-        <div class="formulario">
+        <form id="formulario">
           <label for="entradaNomes">Adicione os nomes para o sorteio</label>
           <textarea id="entradaNomes" placeholder="adicione nomes por vírgulas ex.(Maria, João, Felipe)"></textarea>
 
-          <button class="botaoSortear">Sortear</button>
-        </div>
+          <button id="botao-sortear">Sortear</button>
+        </form>
 
         <div class="resultado">
-          <span class="fechar">X</span>
+          <button id="botao-fechar">X</button>
           <p>Resultado</p>
         </div>
       </section>

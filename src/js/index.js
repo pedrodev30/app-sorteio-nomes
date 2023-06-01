@@ -1,8 +1,8 @@
-const btnSortear = document.querySelector(".botaoSortear")
+const form = document.querySelector("#formulario")
 const textarea = document.querySelector("textarea")
 const tagResultado = document.querySelector(".resultado p")
 const popUpResultado = document.querySelector(".resultado")
-const btnFechar = document.querySelector(".fechar")
+const botaoFechar = document.querySelector("#botao-fechar")
 
 function pegarDadosDoFormulario() {
   const valorCampo = textarea.value
@@ -15,7 +15,10 @@ function pegarDadosDoFormulario() {
   textarea.value = ""
 }
 
-btnSortear.addEventListener("click", pegarDadosDoFormulario)
+form.addEventListener("submit", (event) => {
+  event.preventDefault()
+  pegarDadosDoFormulario()
+})
 
 function gerarNumeroAleatorio(tamanhoArray) {
   return Math.floor(Math.random() * (tamanhoArray - 0) + 0)
@@ -30,4 +33,4 @@ function fecharPopUp() {
   popUpResultado.classList.remove("mostrarResultado")
 }
 
-btnFechar.addEventListener("click", fecharPopUp)
+botaoFechar.addEventListener("click", fecharPopUp)
