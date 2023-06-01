@@ -6,3 +6,7 @@
     width="100%"
   >
 </p>
+
+## 📒 Descrição
+
+Esse é um Web App feito para sortear nomes.
