@@ -27,7 +27,7 @@ function mostrarResultado(nome) {
 }
 
 function fecharPopUp() {
-  popUpResultado.classList.remove("mostarResultado")
+  popUpResultado.classList.remove("mostrarResultado")
 }
 
 btnFechar.addEventListener("click", fecharPopUp)
