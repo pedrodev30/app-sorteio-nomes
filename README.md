@@ -19,3 +19,9 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 ## 📚 Funcionalidades
 
 - Sortear um nome: Sorteia um nome aleatoriamente.
+
+## 🔧 Tecnologias utilizadas
+
+- HTML
+- CSS
+- JavaScript
