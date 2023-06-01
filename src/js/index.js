@@ -53,4 +53,10 @@ function fecharPopUp() {
   popUpResultado.classList.remove("mostrarResultado")
 }
 
+function fecharModalDeAlerta() {
+  fade.classList.add("hide")
+  modal.classList.add("hide")
+}
+
 botaoFechar.addEventListener("click", fecharPopUp)
+botaoCancelarModal.addEventListener("click", fecharModalDeAlerta)
