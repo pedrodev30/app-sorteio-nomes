@@ -20,16 +20,17 @@ body {
 }
 
 body * {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
 }
 
+/* Header */
 header {
   background-color: var(--bg-color-header);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3.0rem;
+  padding: 3rem;
 }
 
 header h1 {
@@ -37,18 +38,19 @@ header h1 {
   font-size: 3.2rem;
 }
 
+/* Main */
 #app {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50.0rem;
+  height: 50rem;
 }
 
 section {
   background-color: var(--color-white);
   box-shadow: 5px 5px 5px var(--color-gray);
-  padding: 3.0rem;
-  width: 60.0rem;
+  padding: 3rem;
+  width: 60rem;
   color: var(--color-gray);
   text-align: center;
   overflow: hidden;
@@ -60,7 +62,7 @@ section h2 {
 }
 
 section p {
-  margin: 1.0rem 0;
+  margin: 1rem 0;
 }
 
 .text-left {
@@ -72,13 +74,13 @@ section label {
 }
 
 section textarea {
-  padding: 1.0rem;
+  padding: 1rem;
   width: 100%;
-  height: 15.0rem;
+  height: 15rem;
   max-width: 100%;
   min-width: 100%;
-  max-height: 15.0rem;
-  min-height: 15.0rem;
+  max-height: 15rem;
+  min-height: 15rem;
 }
 
 section #botao-sortear {
@@ -86,10 +88,10 @@ section #botao-sortear {
   color: var(--color-white);
   border: none;
   text-transform: uppercase;
-  padding: 1.0rem;
+  padding: 1rem;
   font-weight: bold;
   cursor: pointer;
-  margin-top: 1.0rem;
+  margin-top: 1rem;
   border-radius: 5px;
   opacity: 0.7;
   transition: all 0.3s;
@@ -99,10 +101,7 @@ section #botao-sortear:hover {
   opacity: 1;
 }
 
-footer {
-  height: 40.0rem;
-  background-image: linear-gradient(to bottom, var(--bg-color-header), var(--bg-color-resultado));
-}
+/* PopUp */
 
 .resultado {
   position: absolute;
@@ -119,9 +118,9 @@ footer {
   transition: 0.5s;
 }
 
-.resultado #botao-fechar{
+.resultado #botao-fechar {
   float: right;
-  margin: 2.0rem;
+  margin: 2rem;
   color: var(--bg-color-body);
   font-size: 1.4rem;
   border: none;
@@ -131,7 +130,7 @@ footer {
   justify-content: center;
   cursor: pointer;
   background-color: var(--bg-color-button-fechar);
-  opacity: .8;
+  opacity: 0.8;
   transition: all 0.3s;
   padding: 0.4rem 1.2rem;
 }
@@ -140,14 +139,24 @@ footer {
   opacity: 1;
 }
 
-.resultado p{
+.resultado p {
   text-align: center;
   color: var(--color-white);
-  font-size: 3.0rem;
+  font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+/* Footer */
+footer {
+  height: 40rem;
+  background-image: linear-gradient(
+    to bottom,
+    var(--bg-color-header),
+    var(--bg-color-resultado)
+  );
 }
