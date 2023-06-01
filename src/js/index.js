@@ -25,3 +25,9 @@ function mostrarResultado(nome) {
   tagResultado.innerText = `Resultado: ${nome}`
   popUpResultado.classList("mostrarResultado")
 }
+
+function fecharPopUp() {
+  popUpResultado.classList.remove("mostarResultado")
+}
+
+btnFechar.addEventListener("click", fecharPopUp)
