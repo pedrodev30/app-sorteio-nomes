@@ -36,6 +36,7 @@ header {
 header h1 {
   color: var(--color-white);
   font-size: 3.2rem;
+  text-align-last: center;
 }
 
 /* Main */
