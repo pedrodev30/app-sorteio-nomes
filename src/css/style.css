@@ -164,6 +164,22 @@ footer {
   );
 }
 
+div.fade.hide, 
+div.modal.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+div.modal.hide {
+  top: 0;
+}
+
+div.fade,
+div.modal {
+  opacity: 1;
+  transition: all 1s;
+}
+
 /* Fade */
 div.fade {
   position: fixed;
