@@ -18,6 +18,13 @@ function pegarDadosDoFormulario() {
     return
   }
 
+  if(!valorCampo.includes(",")) {
+    fade.classList.remove("hide")
+    modal.classList.remove("hide")
+    textoAlerta.innerText = "Por favor separe os nomes por vírgula!"
+    return
+  }
+
   const listaNomes = valorCampo.split(",")
   const tamanhoArray = listaNomes.length
 
