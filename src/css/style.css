@@ -8,6 +8,10 @@ body {
   background-color: #eeeeee;
 }
 
+body * {
+  font-family: 'Roboto', sans-serif;
+}
+
 header {
   background-color: #04133d;
   display: flex;
