@@ -41,3 +41,7 @@ $ Abra a pasta no Visual Studio Code ou editor de sua Preferência
 # Live Server é uma extensão do Vs Code que executa o arquivo no seu navegador
 $ Agora abra o arquivo index.html com o live Server
 ```
+
+## 🔖 Layout
+
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1246217282785606432). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
