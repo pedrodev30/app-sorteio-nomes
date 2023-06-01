@@ -1,3 +1,12 @@
+:root {
+  --bg-color-body: #eeeeee;
+  --bg-color-header: #04133d;
+  --color-white: #ffffff;
+  --color-gray: #808080;
+  --bg-color-button-sortear: #1480fa;
+  --bg-color-resultado: rgba(4, 20, 62, 89%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +14,7 @@
 }
 
 body {
-  background-color: #eeeeee;
+  background-color: var(--bg-color-body);
 }
 
 body * {
@@ -13,7 +22,7 @@ body * {
 }
 
 header {
-  background-color: #04133d;
+  background-color: var(--bg-color-header);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +30,7 @@ header {
 }
 
 header h1 {
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 #app {
@@ -32,11 +41,11 @@ header h1 {
 }
 
 section {
-  background-color: #ffffff;
-  box-shadow: 5px 5px 5px #808080;
+  background-color: var(--color-white);
+  box-shadow: 5px 5px 5px var(--color-gray);
   padding: 30px;
   width: 600px;
-  color: #808080;
+  color: var(--color-gray);
   text-align: center;
   overflow: hidden;
   position: relative;
@@ -69,8 +78,8 @@ section textarea {
 }
 
 section #botao-sortear {
-  background-color: #1480fa;
-  color: #ffffff;
+  background-color: var(--bg-color-button-sortear);
+  color: var(--color-white);
   border: none;
   text-transform: uppercase;
   padding: 10px;
@@ -88,7 +97,7 @@ section #botao-sortear:hover {
 
 footer {
   height: 400px;
-  background-image: linear-gradient(to bottom, #04133d, rgba(4, 20, 62, 89%));
+  background-image: linear-gradient(to bottom, var(--bg-color-header), var(--bg-color-resultado));
 }
 
 .resultado {
@@ -97,7 +106,7 @@ footer {
   left: -100%;
   width: 100%;
   height: 100%;
-  background-color: rgba(4, 20, 62, 89%);
+  background-color: var(--bg-color-resultado);
   transition: 0.5s;
 }
 
@@ -109,11 +118,11 @@ footer {
 .resultado #botao-fechar{
   float: right;
   margin: 20px;
-  color:#fff;
+  color: var(--color-white);
   font-size: 20px;
   width: 40px;
   height: 40px;
-  border: solid #fff 2px;
+  border: solid var(--color-white) 2px;
   border-radius: 100%;
   display: flex;
   align-items: center;
@@ -121,9 +130,10 @@ footer {
   cursor: pointer;
   background-color: transparent;
 }
+
 .resultado p{
   text-align: center;
-  color: #fff;
+  color: var(--color-white);
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
