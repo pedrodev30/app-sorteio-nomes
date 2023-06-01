@@ -88,9 +88,7 @@ section #botao-sortear:hover {
 
 footer {
   height: 400px;
-  background-image: url(../img/fundo-rodape.png);
-  background-size: cover;
-  background-attachment: fixed;
+  background-image: linear-gradient(to bottom, #04133d, rgba(4, 20, 62, 89%));
 }
 
 .resultado {
