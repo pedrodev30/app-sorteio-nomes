@@ -23,7 +23,7 @@ function gerarNumeroAleatorio(tamanhoArray) {
 
 function mostrarResultado(nome) {
   tagResultado.innerText = `Resultado: ${nome}`
-  popUpResultado.classList("mostrarResultado")
+  popUpResultado.classList.add("mostrarResultado")
 }
 
 function fecharPopUp() {
