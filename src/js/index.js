@@ -12,8 +12,9 @@ function pegarDadosDoFormulario() {
   const valorCampo = textarea.value
   
   if(valorCampo == "") {
-    fade.classList.remove("hide")
-    modal.classList.remove("hide")
+    [fade, modal].forEach((element) => {
+      element.classList.remove("hide")
+    })
     textoAlerta.innerText = "Por favor preencha algum nome para sortear!"
     return
   }
@@ -22,8 +23,9 @@ function pegarDadosDoFormulario() {
   const tamanhoArray = listaNomes.length
 
   if(tamanhoArray < 3) {
-    fade.classList.remove("hide")
-    modal.classList.remove("hide")
+    [fade, modal].forEach((element) => {
+      element.classList.remove("hide")
+    })
     textoAlerta.innerText = "Por favor digite pelo menos três nomes para sortear!"
     return
   }
@@ -54,8 +56,9 @@ function fecharPopUp() {
 }
 
 function fecharModalDeAlerta() {
-  fade.classList.add("hide")
-  modal.classList.add("hide")
+  [fade, modal].forEach((element) => {
+    element.classList.add("hide")
+  })
 }
 
 botaoFechar.addEventListener("click", fecharPopUp)
